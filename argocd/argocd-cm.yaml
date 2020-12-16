@@ -8,8 +8,8 @@ metadata:
     app.kubernetes.io/part-of: argocd
 data:
   repositories: |
-    - name: poc-nextershop-gitops
-      url: git@github.com:SCGWEDOtech/trinity-gitops.git
+    - name: k8s-gitops-workshop
+      url: git@github.com:SCGWEDOtech/k8s-gitops-workshop.git
       sshPrivateKeySecret:
         name: repository-secret
-        key: trinityGitopsDeployKey
+        key: k8sWorkshopDeployKey

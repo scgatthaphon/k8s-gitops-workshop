@@ -61,8 +61,11 @@ stringData:
 ## 2. Install ArgoCD
 
 ```bash
-kubectl apply -f namespace.yaml
+kubectl apply -f controller/namespace.yaml
+
 kubectl apply -k controller
+# if the above fails, use this instead:
+kustomize build controller | kubectl apply -f-
 ```
 
 ## 3. Configure ArgoCD Server
@@ -84,6 +87,9 @@ Follows the [Login Using The CLI](https://argoproj.github.io/argo-cd/getting_sta
 instruction.
 
 ### 3.3. Additional Configs
+
+In `argocd-cm.yaml` change `data.repositories.url` from 'SCGWEDOtech/k8s-gitops-workshop'
+to '<YOUR_GITHUB_USERNAME>/k8s-gitops-workshop'.
 
 All additonal configurations are gathered by kustomize (`kustomization.yaml`),
 including the repository credential secret.
