@@ -1,5 +1,13 @@
 # Argo CD
 
+## 0. Prerequisite
+
+Change directory first.
+
+```bash
+cd argocd
+```
+
 ## 1. Setup Repository Credentials
 
 ### 1.1. Add ssh key to repository

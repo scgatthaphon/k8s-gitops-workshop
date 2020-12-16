@@ -2,6 +2,12 @@
 
 ## Setup
 
+Change directory first.
+
+```bash
+cd eks
+```
+
 Create a new pulumi stack.
 
 ```bash
