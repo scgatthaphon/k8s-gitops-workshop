@@ -62,7 +62,10 @@ stringData:
 
 ```bash
 kubectl apply -f controller/namespace.yaml
+
 kubectl apply -k controller
+# if the above fails, use this instead:
+kustomize build controller | kubectl apply -f-
 ```
 
 ## 3. Configure ArgoCD Server
