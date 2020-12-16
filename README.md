@@ -62,12 +62,16 @@ brew install pulumi
 npm install
 ```
 
+## Pulumi Login
+
+```bash
+pulumi login --local
+```
 
 <br/><br/><br/>
 
-
-
 ## For Windows users
+
 ```Use AWS Cloud9 as a dev environment
 https://ap-northeast-1.console.aws.amazon.com/cloud9/home/product
 ```
@@ -143,4 +147,18 @@ pulumi version
 
 ```bash
 npm install
+```
+
+## Troubleshooting
+
+If `pulumi up` throws
+
+```bash
+    error: no resource plugin 'kubernetes' found in the workspace or on your $PATH
+```
+
+You have to install pulumi's kubernetes pluing manually:
+
+```bash
+pulumi plugin install kubernetes 2.7.4
 ```

@@ -2,6 +2,12 @@
 
 ## Setup
 
+Change directory first.
+
+```bash
+cd ecr
+```
+
 Create a new pulumi stack.
 
 ```bash
