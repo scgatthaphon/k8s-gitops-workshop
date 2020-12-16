@@ -61,7 +61,7 @@ stringData:
 ## 2. Install ArgoCD
 
 ```bash
-kubectl apply -f namespace.yaml
+kubectl apply -f controller/namespace.yaml
 kubectl apply -k controller
 ```
 
