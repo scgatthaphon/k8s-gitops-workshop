@@ -62,6 +62,12 @@ brew install pulumi
 npm install
 ```
 
+## Pulumi Login
+
+```bash
+pulumi login --local
+```
+
 
 <br/><br/><br/>
 
