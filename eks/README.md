@@ -41,5 +41,5 @@ pulumi up
 # get the cluster name
 CLUSTER_NAME=$(pulumi stack output clusterName)
 # update cluster config to kubectl
-aws eks update-kubeconfig --name "${CLUSTER_NAME}"
+aws eks update-kubeconfig --profile k8s-gitops-workshop --name "${CLUSTER_NAME}"
 ```
